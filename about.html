@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Observer Desk</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    background:#0f1115;
+    color:#f4f4f4;
+    font-family:'Inter',sans-serif;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.about-hero{
+    min-height:calc(100vh - 72px);
+    display:flex;
+    align-items:center;
+}
+
+.about-wrapper{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+.hero-main{
+    max-width:900px;
+}
+
+.about-logo{
+    display:block;
+
+    width:min(1050px,100%);
+    height:auto;
+
+    margin-bottom:25px;
+
+    opacity:0;
+    transform:translateY(60px);
+
+    animation:titleReveal 2s ease forwards;
+    animation-delay:1s;
+}
+
+.hero-word{
+    font-size:clamp(7rem,18vw,14rem);
+    font-weight:900;
+    line-height:.82;
+    letter-spacing:-6px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+
+    color:#ff8c1a;
+
+    opacity:0;
+    transform:translateY(100px);
+
+    animation:titleReveal 3s ease forwards;
+    animation-delay:1s;
+}
+
+.hero-tagline{
+    font-size:1.3rem;
+    color:#d8d8d8;
+    margin-bottom:35px;
+    line-height:1.6;
+    opacity:0;
+    animation:heroReveal 1.2s ease forwards;
+    animation-delay:1.3s;
+}
+
+.hero-intro p{
+    color:#cfcfcf;
+    line-height:1.9;
+    font-size:1.05rem;
+    margin-bottom:20px;
+    opacity:0;
+    animation:heroReveal 1.7s ease forwards;
+    animation-delay:1.9s;
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.section{
+    width:min(1100px,90%);
+    margin:auto;
+    padding:70px 0;
+}
+
+.editorial-title{
+    font-size:clamp(3rem,8vw,6rem);
+    font-weight:900;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.08);
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.section-text{
+    max-width:800px;
+    color:#d0d0d0;
+    line-height:1.9;
+}
+
+/* ===========================
+   PROCESS
+=========================== */
+
+.process-line{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    align-items:center;
+
+    margin-top:35px;
+
+    font-size:clamp(1rem,2vw,1.8rem);
+    font-weight:800;
+    text-transform:uppercase;
+}
+
+.process-line span{
+    color:#ff8c1a;
+}
+
+/* ===========================
+   TOPICS
+=========================== */
+
+.topics{
+    margin-top:25px;
+}
+
+.topic{
+    font-size:clamp(1.5rem,3vw,2.3rem);
+    font-weight:800;
+    text-transform:uppercase;
+
+    padding:15px 0;
+
+    border-bottom:
+    1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.topic:hover{
+    color:#ff8c1a;
+    padding-left:12px;
+}
+
+/* ===========================
+   FINAL
+=========================== */
+
+.final-section{
+    text-align:center;
+    padding:80px 0 120px;
+}
+
+.final-word{
+    font-size:clamp(4rem,10vw,8rem);
+    font-weight:900;
+    text-transform:uppercase;
+
+    color:rgba(255,255,255,.12);
+}
+
+.final-text{
+    margin-top:20px;
+    color:#d0d0d0;
+    line-height:2;
+    font-size:1.15rem;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:
+    1px solid rgba(255,255,255,.08);
+
+    color:#888;
+
+}
+
+/* ===========================
+   SOCIAL
+=========================== */
+
+.social-about{
+    width:min(1100px,90%);
+    margin:0 auto 100px;
+    text-align:center;
+}
+
+.social-label{
+    font-size:.9rem;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    color:#ff8c1a;
+    margin-bottom:30px;
+}
+
+.social-about .social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social-about .social-links a{
+    text-decoration:none;
+    color:#f4f4f4;
+
+    padding:14px 22px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:.3s;
+}
+
+.social-about .social-links a:hover{
+    background:#ff8c1a;
+    border-color:#ff8c1a;
+}
+
+</style>
+
+</head>
+
+<script>
+
+function toggleSearch(){
+
+document
+.getElementById('searchBar')
+.classList
+.toggle('active');
+
+}
+
+function searchEssay(){
+
+const query =
+document
+.getElementById('searchInput')
+.value
+.toLowerCase();
+
+const essays = {
+
+        "dengvaxia":
+        "essays/Dengvaxia.html",
+
+        "playbook":
+        "essays/playbook.html",
+
+        "who decides":
+        "essays/Who Decides.html",
+
+        "forgotten senator":
+        "essays/Forgotten Senator.html",
+
+        "permanent advantage":
+        "essays/Politics of Permanent Advantage.html",
+
+        "cse":
+        "essays/CSE.html",
+
+        "juvenile":
+        "essays/juvenile.html",
+
+        "kiko":
+        "essays/juvenile.html",
+
+        "kiko pangilinan":
+        "essays/juvenile.html",
+
+        "salary":
+        "essays/Juan.html",
+
+        "putang ina":
+        "essays/Juan.html",
+
+        "juan":
+        "essays/Juan.html",
+
+        "media":
+        "essays/trust.html",
+
+        "gma":
+        "essays/trust.html",
+
+        "rappler":
+        "essays/trust.html",
+
+        "abs":
+        "essays/trust.html",
+
+        "risa hontiveros":
+        "essays/CSE.html",
+
+        "aquino":
+        "essays/AquinoMarcos.html",
+
+        "marcos":
+        "essays/AquinoMarcos.html",
+
+        "aquino marcos":
+        "essays/AquinoMarcos.html",
+
+        "marcos aquino":
+        "essays/AquinoMarcos.html",
+
+        "sex education":
+        "essays/CSE.html",
+
+        "nobel":
+        "essays/award.html",
+
+        "magsaysay":
+        "essays/award.html",
+
+        "awards":
+        "essays/award.html",
+
+        "ressa":
+        "essays/award.html",
+
+        "ibp":
+        "essays/IBP_article.html",
+
+        "davao":
+        "essays/davao.html",
+
+        "human judgment":
+        "essays/keeping-the-human-in-human-judgment.html",
+
+        "used ai":
+        "essays/you-used-ai.html",
+
+        "de facto":
+        "essays/leader.html",
+
+        "CAP":
+        "essays/CAP.html",
+ 
+       "martin romualdez":
+        "essays/PGMN.html",
+
+        "pgmn":
+        "essays/PGMN.html",
+
+        "parliament":
+        "essays/parliament.html",
+        
+        "vietnam":
+        "essays/ASEAN.html"
+
+};
+
+for(const key in essays){
+
+if(query.includes(key)){
+
+window.location.href =
+essays[key];
+
+return;
+
+}
+
+}
+
+}
+
+</script>
+
+
+<body>
+
+<!-- =========================================
+     HEADER / NAVIGATION
+========================================= -->
+<header class="article-topbar">
+
+    <div class="container">
+
+        <nav>
+
+            <a href="index.html" class="logo">
+                <img src="images/observer-logo-outline.png" alt="Observer Desk">
+            </a>
+
+            <div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="Essay.html" class="active">Essays</a>
+
+<a href="about.html">About</a>
+
+<button class="search-toggle"
+onclick="toggleSearch()">
+🔍 </button>
+
+<div id="searchBar" class="search-bar">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search essays..."
+onkeyup="searchEssay()">
+
+</div>
+
+</div>
+
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     HERO SECTION
+     Main introduction to Observer Desk
+========================================= -->
+<section class="about-hero">
+
+    <div class="about-wrapper">
+
+        <div class="hero-main">
+
+            <!-- Logo -->
+            <img
+             src="images/observer-logo-outline.png"
+             alt="Observer Desk"
+             class="about-logo">
+
+            <!-- Tagline -->
+            <div class="hero-tagline">
+                Independent Thinking. Evidence Before Opinion.
+            </div>
+
+            <!-- Introduction -->
+            <div class="hero-intro">
+
+                <p>
+                    Observer Desk is a personal project built on curiosity,
+                    skepticism, and the belief that every issue deserves
+                    careful observation before judgment. In a world increasingly
+                    shaped by narratives, algorithms, and information overload,
+                    understanding reality requires more than simply choosing a side.
+                </p>
+
+                <p>
+                    I do not approach topics as a political activist or partisan
+                    commentator. My perspective is grounded in realism, critical
+                    thinking, and a willingness to examine competing viewpoints.
+                    I use research, historical context, and modern AI tools to
+                    organize information, challenge assumptions, and refine my
+                    understanding. AI does not decide what I believe—it helps me
+                    ask better questions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     APPROACH SECTION
+     Formerly "FACTS"
+========================================= -->
+<section class="section">
+
+    <div class="editorial-title">
+        APPROACH
+    </div>
+
+    <div class="section-text">
+
+        Real understanding begins with observation,
+        not ideology.
+
+        <br><br>
+
+        At Observer Desk, every topic starts with
+        gathering information, examining context,
+        comparing perspectives, and testing conclusions
+        against available evidence.
+
+        <br><br>
+
+        Opinions should be shaped by facts,
+        not the other way around.
+
+        <br><br>
+
+        The objective is not to defend a narrative.
+        The objective is to understand reality as clearly
+        as possible while remaining open to new evidence
+        and better arguments.
+
+    </div>
+
+    <!-- Thinking Process -->
+    <div class="process-line">
+
+        OBSERVE
+
+        <span>→</span>
+
+        CONTEXT
+
+        <span>→</span>
+
+        ANALYSIS
+
+        <span>→</span>
+
+        CONCLUSION
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     AREAS OF INTEREST SECTION
+     Formerly "TOPICS"
+========================================= -->
+<section class="section">
+
+    <div class="editorial-title">
+        AREAS OF INTEREST
+    </div>
+
+    <div class="topics">
+
+        <div class="topic">Politics & Governance</div>
+
+        <div class="topic">Media & Narratives</div>
+
+        <div class="topic">History & Context</div>
+
+        <div class="topic">Society & Culture</div>
+
+        <div class="topic">Technology & AI</div>
+
+        <div class="topic">Current Events</div>
+
+        <div class="topic">Critical Thinking</div>
+
+        <div class="topic">Fact Checking</div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FINAL MESSAGE SECTION
+========================================= -->
+<section class="final-section">
+
+    <div class="final-word">
+        OBSERVER DESK
+    </div>
+
+    <div class="final-text">
+
+        Observe First.<br>
+
+        Question Assumptions.<br>
+
+        Analyze Carefully.<br>
+
+        Decide Independently.
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     SOCIAL
+========================================= -->
+
+<section class="social-about">
+
+    <div class="social-label">
+        Follow Observer Desk
+    </div>
+
+    <div class="social-links">
+
+        <a href="https://www.facebook.com/profile.php?id=61590416980374">Facebook</a>
+
+        <a href="#">X</a>
+
+        <a href="#">YouTube</a>
+
+        <a href="#">Instagram</a>
+
+        <a href="#">TikTok</a>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+<footer>
+
+    Observer Desk © 2026
+
+    <br><br>
+
+    Independent Thinking. Evidence Before Opinion.
+
+</footer>
+
+</body>
+</html>
+

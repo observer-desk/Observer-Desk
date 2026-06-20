@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Essays | Observer Desk</title>
+
+<meta name="description"
+content="A collection of essays, investigations, and commentary from Observer Desk.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<script>
+
+function toggleSearch(){
+
+document
+.getElementById('searchBar')
+.classList
+.toggle('active');
+
+}
+
+function searchEssay(){
+
+const query =
+document
+.getElementById('searchInput')
+.value
+.toLowerCase();
+
+const essays = {
+
+        "dengvaxia":
+        "essays/Dengvaxia.html",
+
+        "playbook":
+        "essays/playbook.html",
+
+        "aquino":
+        "essays/AquinoMarcos.html",
+
+        "marcos":
+        "essays/AquinoMarcos.html",
+
+        "aquino marcos":
+        "essays/AquinoMarcos.html",
+
+        "juvenile":
+        "essays/juvenile.html",
+
+        "kiko":
+        "essays/juvenile.html",
+
+        "kiko pangilinan":
+        "essays/juvenile.html",
+
+        "salary":
+        "essays/Juan.html",
+
+        "putang ina":
+        "essays/Juan.html",
+
+        "juan":
+        "essays/Juan.html",
+
+        "media":
+        "essays/trust.html",
+
+        "gma":
+        "essays/trust.html",
+
+        "rappler":
+        "essays/trust.html",
+
+        "abs":
+        "essays/trust.html",
+
+        "marcos aquino":
+        "essays/AquinoMarcos.html",
+
+        "nobel":
+        "essays/award.html",
+
+        "magsaysay":
+        "essays/award.html",
+
+        "awards":
+        "essays/award.html",
+
+        "ressa":
+        "essays/award.html",
+
+        "who decides":
+        "essays/Who Decides.html",
+
+        "forgotten senator":
+        "essays/Forgotten Senator.html",
+
+        "permanent advantage":
+        "essays/Politics of Permanent Advantage.html",
+
+        "CAP":
+        "essays/CAP.html",
+
+        "ibp":
+        "essays/IBP_article.html",
+
+        "davao":
+        "essays/davao.html",
+        "cse":
+        "essays/CSE.html",
+
+        "risa hontiveros":
+        "essays/CSE.html",
+
+        "sex education":
+        "essays/CSE.html",
+
+        "human judgment":
+        "essays/keeping-the-human-in-human-judgment.html",
+
+        "parliament":
+        "essays/parliament.html",
+
+        "martin romualdez":
+        "essays/PGMN.html",
+
+        "pgmn":
+        "essays/PGMN.html",
+
+        "de facto":
+        "essays/leader.html",
+
+        "used ai":
+        "essays/you-used-ai.html",
+        
+        "vietnam":
+        "essays/ASEAN.html"
+
+};
+
+for(const key in essays){
+
+if(query.includes(key)){
+
+window.location.href =
+essays[key];
+
+return;
+
+}
+
+}
+
+}
+
+</script>
+
+
+<body>
+
+<header class="article-topbar">
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">
+<img src="images/observer-logo-outline.png" alt="Observer Desk">
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="Essay.html" class="active">Essays</a>
+
+<a href="about.html">About</a>
+
+<button class="search-toggle"
+onclick="toggleSearch()">
+🔍 </button>
+
+<div id="searchBar" class="search-bar">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search essays..."
+onkeyup="searchEssay()">
+
+</div>
+
+</div>
+
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero archive-hero">
+
+<div class="hero-content">
+
+<p class="eyebrow">
+Observer Desk Collection
+</p>
+
+<div class="hero-tag">
+Politics • Governance • History • Public Affairs
+</div>
+
+<h1>
+Ideas Worth Examining.
+</h1>
+
+<p>
+A collection of essays, investigations, and commentary
+exploring politics, institutions, media, governance,
+and the narratives that shape public understanding.
+</p>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="archive-highlight">
+
+    <span class="archive-highlight-label">
+        Featured Collection
+    </span>
+
+    <h2>
+        Institutions, Governance, and Public Understanding
+    </h2>
+
+    <p>
+        Essays examining constitutional questions,
+        political institutions, media narratives,
+        governance, and the assumptions that shape
+        public discourse.
+    </p>
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+
+
+<section class="section">
+
+<div class="section-title">
+Featured Essay
+</div>
+
+<div class="featured">
+
+<div class="featured-date">
+June 2026 · Investigation
+</div>
+
+<h2>
+Noynoy Aquino and Bongbong Marcos Are the Same... In Some Ways
+</h2>
+
+<p>
+Their supporters see them as opposites. Yet a closer examination of their rise to power, governance records, and political coalitions reveals striking similarities.
+</p>
+
+<div class="featured-quote">
+A striking comparison between both leaders of the Philippines
+</div>
+
+<a href="essays/AquinoMarcos.html" class="button">
+Read Essay
+</a>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<section class="section">
+
+<div class="section-title">
+All Essays
+</div>
+
+<div class="essay-grid">
+
+<!--Copy Start here -->
+<a href="essays/AquinoMarcos.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/AquinoMarcos.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">
+Politics • Governance • Philippines
+</span>
+<h3>
+Noynoy Aquino and Bongbong Marcos Are the Same... In Some Ways
+</h3>
+<p>
+Their supporters see them as opposites. Yet a closer examination of their rise to power, governance records, and political coalitions reveals striking similarities.
+</p>
+</div>
+</div>
+</a>
+<!--Copy End here -->
+
+<a href="essays/juvenile.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/juvenile.jpg" alt="Analysis">
+<div class="essay-card-content">
+<span class="essay-category">
+Juvenile Justice • RA 9344 • Bahay Pag-Asa • CICL
+</span>
+<h3>
+THE PANGILINAN LAW FAILED TWICE: NO PREVENTION, UNDERFUNDED REHABILITATION
+</h3>
+<p>
+CICL cases fell 84% from 2017-2024 despite RA 9344, not because of it. We never invested in keeping kids out. We barely funded helping them after.
+</p>
+</div>
+</div>
+</a>
+
+<a href="essays/trust.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/trust.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">
+Media • Trust • Journalism
+</span>
+<h3>
+Losing the Public's Trust
+</h3>
+<p>
+An Industry-Wide Decline in Confidence in Philippine Journalism
+</p>
+</div>
+</div>
+</a>
+
+
+<a href="essays/Juan.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/Juan.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">
+Cost of Living • Taxes • Working Class • Philippines
+</span>
+<h3>
+P*tang Ina, Ako 'To!
+</h3>
+<p>
+He earns more than most Filipinos. So why did he lie to his son about ₱40? A life of an average Juan.
+</p>
+</div>
+</div>
+</a>
+
+<a href="essays/award.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/award.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">
+Politics • Academia • Media • Institutions
+</span>
+<h3>
+The Prestige Scam
+</h3>
+<p>
+How Awards like NOBEL Stopped Signaling Excellence—and Started Manufacturing Legitimacy
+</p>
+</div>
+</div>
+</a>
+
+<a href="essays/CSE.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/CSE.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">
+Politics & Policy
+</span>
+<h3>
+“Not My Job to Write Lesson Plans”
+</h3>
+<p>
+A Senate hearing, a viral backlash, and the collapse of Risa Hontiveros' Adolescent Pregnancy Bill
+</p>
+</div>
+</div>
+</a>
+
+<a href="essays/PGMN.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/PGMN.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">
+Politics & Governance
+</span>
+<h3>
+When Congress Holds the Purse, Who Watches the Spenders?
+</h3>
+<p>
+A PGMN investigation into Martin Romualdez and the House budget asks: How much visibility do we get into the chamber that writes the national budget?
+</p>
+</div>
+</div>
+</a>
+
+<a href="essays/CAP.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/CAP.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">
+Essay
+</span>
+<h3>
+The 2005 Pre-Need Crisis: Did Regulation Save Policyholders, or Sink Them?
+</h3>
+<p>
+Thousands of Filipino families trusted CAP and Pacific Plans to secure their future. But when the industry collapsed in 2005, a regulatory fix meant to protect consumers may have accelerated one of the worst losses of savings in modern Philippine financial history.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/parliament.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/parliament.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Essay
+</span>
+
+<h3>
+Philippines Should Consider a Parliamentary Republic
+</h3>
+
+<p>
+Stronger institutions, empowering provinces, and creating a government that works beyond election cycles.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/leader.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/leader.jpg" alt="OPINION">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Opinion
+</span>
+
+<h3>
+The Senate Has a Leader. Does It Have a Legitimate One?
+</h3>
+
+<p>
+The debate over the June 6 quorum is no longer just political. It is a constitutional question about de facto authority, legal legitimacy, and who should ultimately decide.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/you-used-ai.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/you-used-ai-hero.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Commentary
+</span>
+
+<h3>
+"You Used AI": The New Way to Dismiss an Argument
+</h3>
+
+<p>
+Political correctness, AI-assisted writing,
+and the importance of judging ideas rather than presentation.
+</p>
+
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/ASEAN.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/ASEAN.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Geopolitics Opinion
+</span>
+
+<h3>
+Friends to All, Enemy to None
+</h3>
+
+<p>
+Has the Philippines Chosen Geopolitics Over Development?
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/Who Decides.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/who-decides-who-counts-hero.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Constitutional Essay
+</span>
+
+<h3>
+Who Decides Who Counts?
+</h3>
+
+<p>
+The Constitution Already Did:
+Objective Facts, Not Political Judgments.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/Forgotten Senator.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/Forgotten Senator.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Constitutional Essay
+</span>
+
+<h3>
+The Forgotten Senator
+</h3>
+
+<p>
+The senator whose absence is often overlooked
+in modern retellings of Avelino v. Cuenco.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/Politics of Permanent Advantage.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/Politics of Permanent Advantage.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Opinion
+</span>
+
+<h3>
+Politics of Permanent Advantage
+</h3>
+
+<p>
+Patrimonial plunder, institutions,
+and the enduring relevance of Lee Kuan Yew.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/Dengvaxia.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/Dengvaxia.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Investigation
+</span>
+
+<h3>
+Dengvaxia: The Children Who Never Came Home
+</h3>
+
+<p>
+Revisiting the Philippine Dengvaxia crisis a decade later.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/keeping-the-human-in-human-judgment.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/human-judgment-ai.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Opinion
+</span>
+
+<h3>
+Keeping the Human in Human Judgment
+</h3>
+
+<p>
+Using AI to challenge narratives,
+not replace human judgment.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/playbook.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/playbook.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Politics
+</span>
+
+<h3>
+The Playbook
+</h3>
+
+<p>
+The recurring pattern behind political
+movements in Philippine history.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/exception-or-the-rule..html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/exception-or-the-rule.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Opinion
+</span>
+
+<h3>
+The Risk Behind a Senate Quorum of Twelve
+</h3>
+
+<p>
+How democracies traditionally respond
+to quorum crises.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/IBP_article.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/ibp-captured-institution.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Opinion
+</span>
+
+<h3>
+IBP: A Neutral Institution or a Captured Institution?
+</h3>
+
+<p>
+Participation, influence, and representation
+within the legal profession.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="essays/davao.html" class="essay-card-link">
+
+<div class="essay-card">
+
+<img src="images/davao-is-not-singapore-hero.jpg" alt="Essay">
+
+<div class="essay-card-content">
+
+<span class="essay-category">
+Opinion
+</span>
+
+<h3>
+Davao Is Not Singapore.
+</h3>
+
+<p>
+The comparison was never about skyscrapers.
+It was about governance.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+</section>
+<section class="section social-section">
+
+    <div class="section-title">
+        Follow Community Observer
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61590416980374">Facebook</a>
+        <a href="#">X</a>
+        <a href="#">YouTube</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+    </div>
+
+</section>
+
+
+<section class="section about">
+
+    <div class="section-title">
+        About Observer Desk
+    </div>
+
+    <h2>
+        Think Beyond the Narrative
+    </h2>
+
+    <p>
+        Observer Desk is an independent publication examining politics,
+        institutions, governance, media, and public affairs through
+        context, evidence, and critical thinking.
+    </p>
+
+    <br>
+
+    <p>
+        The objective is not to tell readers what to think,
+        but to encourage deeper examination of the assumptions,
+        narratives, and institutions that shape public understanding.
+    </p>
+
+</section>
+<!-- END ADD HERE -->
+
+</div>
+
+<footer>
+
+Observer Desk © 2026
+
+</footer>
+
+</body>
+</html>

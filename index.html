@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Observer Desk</title>
+
+<meta name="description" content="Politics, society, history, and public affairs through analysis, commentary, and context.">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+<script>
+
+function toggleSearch(){
+
+    document
+        .getElementById('searchBar')
+        .classList
+        .toggle('active');
+
+}
+
+function searchEssay(){
+
+    const query =
+    document
+        .getElementById('searchInput')
+        .value
+        .toLowerCase();
+
+    const essays = {
+
+        "dengvaxia":
+        "essays/Dengvaxia.html",
+
+        "playbook":
+        "essays/playbook.html",
+
+        "who decides":
+        "essays/Who Decides.html",
+
+        "de facto":
+        "essays/leader.html",
+
+        "forgotten senator":
+        "essays/Forgotten Senator.html",
+
+        "juvenile":
+        "essays/juvenile.html",
+
+        "kiko":
+        "essays/juvenile.html",
+
+        "kiko pangilinan":
+        "essays/juvenile.html",
+  
+        "cse":
+        "essays/CSE.html",
+
+        "salary":
+        "essays/Juan.html",
+
+        "putang ina":
+        "essays/Juan.html",
+
+        "juan":
+        "essays/Juan.html",
+
+        "media":
+        "essays/trust.html",
+
+        "gma":
+        "essays/trust.html",
+
+        "rappler":
+        "essays/trust.html",
+
+        "abs":
+        "essays/trust.html",
+
+        "nobel":
+        "essays/award.html",
+
+        "magsaysay":
+        "essays/award.html",
+
+        "awards":
+        "essays/award.html",
+
+        "ressa":
+        "essays/award.html",
+
+        "risa hontiveros":
+        "essays/CSE.html",
+
+        "aquino":
+        "essays/AquinoMarcos.html",
+
+        "marcos":
+        "essays/AquinoMarcos.html",
+
+        "aquino marcos":
+        "essays/AquinoMarcos.html",
+
+        "marcos aquino":
+        "essays/AquinoMarcos.html",
+
+        "sex education":
+        "essays/CSE.html",
+
+        "permanent advantage":
+        "essays/Politics of Permanent Advantage.html",
+
+        "martin romualdez":
+        "essays/PGMN.html",
+
+        "pgmn":
+        "essays/PGMN.html",
+
+        "ibp":
+        "essays/IBP_article.html",
+
+        "davao":
+        "essays/davao.html",
+
+        "CAP":
+        "essays/CAP.html",
+
+        "human judgment":
+        "essays/keeping-the-human-in-human-judgment.html",
+
+        "parliament":
+        "essays/parliament.html",
+
+        "used ai":
+        "essays/you-used-ai.html",
+        
+        "vietnam":
+        "essays/ASEAN.html"
+
+    };
+
+    for(const key in essays){
+
+        if(query.includes(key)){
+
+            window.location.href =
+            essays[key];
+
+        }
+
+    }
+
+}
+
+</script>
+
+<body>
+
+<header class="article-topbar">
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">
+<img src="images/observer-logo-outline.png" alt="Observer Desk">
+</a>
+
+<div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="Essay.html">Essays</a>
+    <a href="about.html">About</a>
+
+    <button class="search-toggle" onclick="toggleSearch()">
+        🔍
+    </button>
+</div>
+
+
+</nav>
+
+</div>
+
+</header>
+
+<div id="searchBar" class="search-bar">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Observer Desk..."
+        onkeyup="searchEssay()">
+
+</div>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-main">
+
+<div class="hero-left">
+
+<p class="eyebrow">
+Realism • Context • Critical Thinking
+</p>
+
+<div class="hero-tag">
+Independent Analysis • Politics • Society • AI
+</div>
+
+<h1>
+<span class="hero-highlight">Think</span> Beyond the Narrative
+</h1>
+
+<p>
+Politics, society, history, and current events examined
+through context, evidence, and critical thinking.
+
+Using research, historical perspective, and AI-assisted
+analysis to challenge assumptions and explore issues
+from multiple angles.
+</p>
+
+<a href="Essay.html" class="button">
+Read Essays
+</a>
+
+</div>
+
+</div>
+
+
+<p class="hero-signature">
+Evidence before opinion.
+</p>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<section class="section">
+
+<div class="section-title">
+Featured Essay
+</div>
+
+<div class="featured">
+
+<div class="featured-date">
+May 2026 · Essay
+</div>
+
+<h2>
+Noynoy Aquino and Bongbong Marcos Are the Same... In Some Ways
+</h2>
+
+<p>
+Their supporters see them as opposites. Yet a closer examination of their rise to power, governance records, and political coalitions reveals striking similarities.
+</p>
+
+<div class="featured-quote">
+
+A striking comparison between both leaders of the Philippines
+
+</div>
+
+<a href="essays/AquinoMarcos.html" class="button">
+Read Essay
+</a>
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="section-title">
+Recent Essays
+</div>
+
+<div class="carousel-wrapper">
+
+<button class="scroll-btn left" onclick="scrollEssays(-1)">❮</button>
+
+<div class="essay-carousel" id="essayCarousel">
+
+<!--Copy Start here -->
+
+<a href="essays/AquinoMarcos.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/AquinoMarcos.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">POLITICS & GOVERNMENT</span>
+<h3>Noynoy Aquino and Bongbong Marcos Are the Same... In Some Ways
+</h3>
+<p>Their supporters see them as opposites. Yet a closer examination of their rise to power, governance records, and political coalitions reveals striking similarities.</p>
+</div>
+</div>
+</a>
+
+<!--Copy End here -->
+
+<a href="essays/juvenile.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/juvenile.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">ANALYSIS</span>
+<h3>THE PANGILINAN LAW FAILED TWICE:
+</h3>
+<p>NO PREVENTION, UNDERFUNDED REHABILITATION</p>
+</div>
+</div>
+</a>
+
+<a href="essays/trust.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/trust.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">MEDIA ANALYSIS</span>
+<h3>Losing the Public's Trust
+</h3>
+<p>An Industry-Wide Decline in Confidence in Philippine Journalism</p>
+</div>
+</div>
+</a>
+
+<a href="essays/Juan.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/Juan.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">ESSAY</span>
+<h3>P*tang Ina, Ako 'To!
+</h3>
+<p>He earns more than most Filipinos. So why did he lie to his son about ₱40? A life of an average Juan.</p>
+</div>
+</div>
+</a>
+
+<a href="essays/award.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/award.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">ESSAY</span>
+<h3>The Prestige Scam
+</h3>
+<p>How Awards like NOBEL Stopped Signaling Excellence—and Started Manufacturing Legitimacy</p>
+</div>
+</div>
+</a>
+
+<a href="essays/CSE.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/CSE.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">POLITICS & POLICY</span>
+<h3>“Not My Job to Write Lesson Plans”
+</h3>
+<p>A Senate hearing, a viral backlash, and the collapse of Risa Hontiveros' Adolescent Pregnancy Bill</p>
+</div>
+</div>
+</a>
+
+
+<a href="essays/PGMN.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/PGMN.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">POLITICS & GOVERNANCE</span>
+<h3>When Congress Holds the Purse, Who Watches the Spenders?
+</h3>
+<p>A PGMN investigation into Martin Romualdez and the House budget asks: How much visibility do we get into the chamber that writes the national budget?</p>
+</div>
+</div>
+</a>
+
+<a href="essays/CAP.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/CAP.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">OPINION</span>
+<h3>The 2005 Pre-Need Crisis (CAP and Pacific Plans)</h3>
+<p>Did Regulation Save Policyholders, or Sink Them?</p>
+</div>
+</div>
+</a>
+
+<a href="essays/leader.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/leader.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">OPINION</span>
+<h3>The Senate Has a Leader. Does It Have a Legitimate One?</h3>
+<p>The debate over the June 6 quorum is no longer just political. It is a constitutional question about de facto authority, legal legitimacy, and who should ultimately decide.</p>
+</div>
+</div>
+</a>
+
+<a href="essays/parliament.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/parliament.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">Essay</span>
+<h3>Philippines Should Consider a Parliamentary Republic</h3>
+<p>Stronger institutions, empowering provinces, and creating a government that works beyond election cycles.</p>
+</div>
+</div>
+</a>
+
+<a href="essays/you-used-ai.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/you-used-ai-hero.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">Commentary</span>
+<h3>"You Used AI": The New Way to Dismiss an Argument</h3>
+<p>Political correctness, AI-assisted writing, and the importance of judging ideas rather than presentation.</p>
+</div>
+</div>
+
+</a>
+
+<a href="essays/ASEAN.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/ASEAN.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">Geopolitics Opinion</span>
+<h3>Friends to All, Enemy to None</h3>
+<p>Has the Philippines Chosen Geopolitics Over Development?</p>
+<a href="#" class="button">Read Essay</a>
+</div>
+</div>
+</a>
+
+<a href="essays/Who Decides.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/who-decides-who-counts-hero.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">Constitutional Essay</span>
+<h3>Who Decides Who Counts?</h3>
+<p>The Constitution Already Did: Objective Facts, Not Political Judgments.</p>
+<a href="#" class="button">Read Essay</a>
+</div>
+</div>
+</a>
+
+<a href="essays/Forgotten Senator.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/Forgotten Senator.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">Constitutional Essay</span>
+<h3>The Forgotten Senator</h3>
+<p>The pro-12 quorum narrative keeps pointing to the senator who was excluded. It rarely discusses the senator who was absent, hospitalized, and still part of the story.</p>
+<a href="#" class="button">Read Essay</a>
+</div>
+</div>
+</a>
+
+<a href="essays/Politics of Permanent Advantage.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/Politics of Permanent Advantage.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">Opinion</span>
+<h3>Politics of Permanent Advantage</h3>
+<p>Patrimonial Plunder by Politicians and the Press: Lee Kuan Yew Saw the Symptom. Paul Hutchcroft Explained the System.</p>
+<a href="#" class="button">Read Essay</a>
+</div>
+</div>
+</a>
+
+<a href="essays/Dengvaxia.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/Dengvaxia.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">Investigation</span>
+<h3>Dengvaxia: The Children Who Never Came Home</h3>
+<p>Revisiting the Philiphine Dengvaxia Crisis a Decade Later</p>
+<a href="#" class="button">Read Essay</a>
+</div>
+</div>
+</a>
+
+<a href="essays/keeping-the-human-in-human-judgment.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/human-judgment-ai.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">Opinion</span>
+<h3>Keeping the Human in Human Judgement</h3>
+<p>History shows that information has never been completely neutral. Using AI to challenge narratives, not replace judgment.</p>
+<a href="#" class="button">Read Essay</a>
+</div>
+</div>
+</a>
+
+<a href="essays/playbook.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/playbook.jpg" alt="Essay">
+<div class="essay-card-content">
+<span class="essay-category">Politics</span>
+<h3>The Playbook</h3>
+<p>The Recurring Pattern Behind Political Movements in Philippine History</p>
+<a href="#" class="button">Read Essay</a>
+</div>
+</div>
+</a>
+
+<a href="essays/exception-or-the-rule..html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/exception-or-the-rule.jpg">
+<div class="essay-card-content">
+<span class="essay-category">Opinion</span>
+<h3>The Risk Behind a Senate Quorum of Twelve</h3>
+<p>Around the world, democracies confronted with quorum crises have generally sought to compel attendance—not lower constitutional safeguards.</p>
+</div>
+</div>
+</a>
+
+<a href="essays/IBP_article.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/ibp-captured-institution.jpg">
+<div class="essay-card-content">
+<span class="essay-category">Opinion</span>
+<h3>IBP: A Neutral Institution or a Captured Institution?</h3>
+<p>Participation, Influence, and the Question of Who Speaks for Philippine Lawyers</p>
+</div>
+</div>
+</a>
+
+<a href="essays/davao.html" class="essay-card-link">
+<div class="essay-card">
+<img src="images/davao-is-not-singapore-hero.jpg">
+<div class="essay-card-content">
+<span class="essay-category">Opinion</span>
+<h3>Davao Is Not Singapore.</h3>
+<p>The comparison was never about skyscrapers. It was about governance.</p>
+</div>
+</div>
+</a>
+
+
+</div>
+
+<button class="scroll-btn right" onclick="scrollEssays(1)">❯</button>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-title">
+Editorial Cartoons & Visual Commentary
+</div>
+
+<div class="carousel-wrapper">
+
+<button class="scroll-btn left"
+onclick="scrollEditorial(-1)">❮</button>
+
+<div class="essay-carousel" id="editorialCarousel">
+
+<!--Copy Start here -->
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp0 econ.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp0 econ.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<!--Copy End here -->
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp25 econ.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp25 econ.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp24.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp24.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp23 econ.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp23 econ.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp22 econ.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp22 econ.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp21 econ.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp21 econ.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp20.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp20.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp19.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp19.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp18.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp18.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp17.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp17.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp16.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp16.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp15.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp15.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp14.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp14.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp13 econ.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp13 econ.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp12 econ.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp12 econ.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp11.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp11.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp10.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp10.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp9.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp9.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp8.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp8.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp7.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp7.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp6.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp6.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp5 econ.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp5 econ.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp4.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp4.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp1.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp1.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp2 econ.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp2 econ.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/pvsp3.jpg">
+<div class="essay-card">
+<img src="images/Editorial/pvsp3.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Infographic</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/Risa notes.jpg">
+<div class="essay-card">
+<img src="images/Editorial/Risa notes.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Satire</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/editorial1.jpg">
+<div class="essay-card">
+<img src="images/Editorial/editorial1.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Cartoon</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/editorial2.jpg">
+<div class="essay-card">
+<img src="images/Editorial/editorial2.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Cartoon</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/editorial3.jpg">
+<div class="essay-card">
+<img src="images/Editorial/editorial3.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Cartoon</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/editorial4.jpg">
+<div class="essay-card">
+<img src="images/Editorial/editorial4.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Cartoon</span>
+</div>
+</div>
+</div>
+
+<div class="essay-card-link editorial-popup"
+     data-image="images/Editorial/editorial5.jpg">
+<div class="essay-card">
+<img src="images/Editorial/editorial5.jpg" alt="">
+<div class="essay-card-content">
+<span class="essay-category">Cartoon</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<button class="scroll-btn right"
+onclick="scrollEditorial(1)">❯</button>
+
+</div>
+
+</section>
+
+<section class="section social-section">
+
+<div class="section-title">
+Follow Community Observer
+</div>
+
+<div class="social-links">
+<a href="#">Facebook</a>
+<a href="#">X</a>
+<a href="#">YouTube</a>
+<a href="#">Instagram</a>
+<a href="#">TikTok</a>
+</div>
+
+</section>
+
+
+<section class="section about">
+
+<div class="section-title">
+About
+</div>
+
+<h2>
+Observer Desk
+</h2>
+
+<p>
+Observer Desk is an independent commentary platform focused on politics,
+history, governance, and public affairs.
+</p>
+
+<br>
+
+<p>
+The goal is to provide thoughtful analysis, encourage discussion,
+and explore issues beyond headlines and partisan narratives.
+</p>
+
+</section>
+
+<footer>
+
+Observer Desk © 2026
+
+</footer>
+
+</div>
+
+
+<script>
+
+function scrollEssays(direction){
+const carousel =
+document.getElementById('essayCarousel');
+
+carousel.scrollBy({
+left: direction * 380,
+behavior: 'smooth'
+});
+}
+
+function scrollEditorial(direction){
+const carousel =
+document.getElementById('editorialCarousel');
+
+carousel.scrollBy({
+left: direction * 380,
+behavior: 'smooth'
+});
+}
+
+
+</script>
+
+<!-- Image Popup Modal -->
+<div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img id="modalImage" class="modal-image">
+</div>
+
+<script>
+
+const modal =
+document.getElementById('imageModal');
+
+const modalImg =
+document.getElementById('modalImage');
+
+const closeModal =
+document.querySelector('.close-modal');
+
+document.querySelectorAll('.editorial-popup')
+.forEach(card => {
+
+    card.addEventListener('click', () => {
+
+        const img =
+        card.querySelector('img');
+
+        modal.style.display = 'flex';
+
+        modalImg.src = img.src;
+
+    });
+
+});
+
+closeModal.addEventListener('click', () => {
+
+    modal.style.display = 'none';
+
+});
+
+modal.addEventListener('click', (e) => {
+
+    if(e.target === modal){
+
+        modal.style.display = 'none';
+
+    }
+
+});
+
+</script>
+
+
+</body>
+</html>

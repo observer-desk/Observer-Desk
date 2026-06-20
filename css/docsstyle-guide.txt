@@ -1,0 +1,351 @@
+==================================================
+POLITICAL BLOV
+WEBSITE STYLE GUIDE
+===================
+
+Last Updated:
+May 2026
+
+==================================================
+WEBSITE STRUCTURE
+=================
+
+index.html
+Homepage
+
+css/style.css
+Master stylesheet
+
+images/
+All website images
+
+essays/
+All article pages
+
+essays/template.html
+Master article template
+
+docs/style-guide.txt
+Website documentation
+
+==================================================
+HOW TO CREATE A NEW ARTICLE
+===========================
+
+STEP 1
+
+Copy:
+
+essays/template.html
+
+STEP 2
+
+Rename:
+
+example:
+
+political-correctness.html
+
+STEP 3
+
+Edit the following placeholders:
+
+[TITLE]
+
+[SUBTITLE]
+
+[DATE]
+
+[DESCRIPTION]
+
+STEP 4
+
+Create article hero image.
+
+Place image inside:
+
+images/
+
+example:
+
+political-correctness-hero.jpg
+
+STEP 5
+
+Change hero image reference:
+
+url('../images/ARTICLE-HERO.jpg');
+
+to
+
+url('../images/political-correctness-hero.jpg');
+
+STEP 6
+
+Paste article content where:
+
+[PASTE ARTICLE HERE]
+
+STEP 7
+
+Save and publish.
+
+==================================================
+HOW TO ADD ARTICLE TO HOMEPAGE
+==============================
+
+Open:
+
+index.html
+
+Find:
+
+FEATURED ARTICLE
+
+Replace:
+
+Title
+
+Description
+
+Button Link
+
+Example:
+
+<a href="essays/political-correctness.html">
+
+==================================================
+HOW TO CHANGE HOMEPAGE HERO IMAGE
+=================================
+
+Open:
+
+css/style.css
+
+Find:
+
+.hero
+
+Replace:
+
+url("../images/hero.jpg");
+
+with new image.
+
+Example:
+
+url("../images/new-hero.jpg");
+
+==================================================
+HOW TO CHANGE ARTICLE HERO IMAGE
+================================
+
+DO NOT EDIT CSS.
+
+Article hero images are controlled inside:
+
+template.html
+
+or
+
+individual article page.
+
+Example:
+
+url('../images/political-correctness-hero.jpg');
+
+==================================================
+COLOR SYSTEM
+============
+
+Background
+--bg
+
+Paper
+--paper
+
+Text
+--text
+
+Accent
+--accent
+
+Border
+--border
+
+Location:
+
+:root
+
+inside style.css
+
+==================================================
+COMMONLY USED CLASSES
+=====================
+
+.hero
+Homepage hero section
+
+.hero-content
+Homepage hero content
+
+.featured
+Homepage featured article
+
+.featured-quote
+Homepage quote box
+
+.button
+Site buttons
+
+.article-hero
+Article hero image section
+
+.article-body
+Article content area
+
+.pull-quote
+Large highlighted quote
+
+.author-box
+Author information
+
+.essay-signature
+Signature at article end
+
+==================================================
+ADDING A PULL QUOTE
+===================
+
+Example:
+
+<div class="pull-quote">
+
+Quote text here.
+
+</div>
+
+==================================================
+ADDING A SECTION HEADING
+========================
+
+Example:
+
+<h2>
+Section Title
+</h2>
+
+==================================================
+ADDING NORMAL TEXT
+==================
+
+Example:
+
+<p>
+Paragraph text.
+</p>
+
+==================================================
+ADDING BULLET LISTS
+===================
+
+Example:
+
+<ul>
+
+<li>Item 1</li>
+
+<li>Item 2</li>
+
+<li>Item 3</li>
+
+</ul>
+
+==================================================
+ARTICLE WRITING FORMULA
+=======================
+
+1. Introduction
+
+2. Problem
+
+3. Analysis
+
+4. Counterargument
+
+5. Conclusion
+
+6. Final Pull Quote
+
+==================================================
+WEBSITE DESIGN RULES
+====================
+
+Do not redesign layout unless necessary.
+
+Do not create custom CSS for every article.
+
+Use template.html for all essays.
+
+Keep typography consistent.
+
+Use one hero image per article.
+
+Prefer readability over visual complexity.
+
+==================================================
+TROUBLESHOOTING
+===============
+
+Hero image not showing?
+
+Check image path.
+
+Example:
+
+../images/article-hero.jpg
+
+Article looks unstyled?
+
+Check:
+
+<link rel="stylesheet"
+href="../css/style.css">
+
+Homepage broken?
+
+Check for missing:
+
+</div>
+
+</section>
+
+or
+
+</main>
+
+tags.
+
+==================================================
+FUTURE FEATURES
+===============
+
+Reading progress bar
+
+Categories
+
+Search
+
+Tags
+
+Dark mode
+
+Comments
+
+Article archive page
+
+Newsletter signup
+
+==================================================
+END OF DOCUMENT
+===============

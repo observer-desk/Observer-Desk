@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>[TITLE]</title>
+
+<meta name="description" content="[DESCRIPTION]">
+
+</head>
+
+<body>
+
+<header class="article-topbar">
+
+<div class="container">
+
+<nav>
+
+<a href="../index.html" class="logo">
+<img src="../images/observer-logo-outline.png" alt="Observer Desk">
+</a>
+
+<div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="../Essay.html">Essays</a>
+    <a href="../about.html">About</a>
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="article-hero-split">
+
+<div class="article-left">
+
+<div class="article-meta">
+[ARTICLE-TYPE] • [DATE]
+</div>
+
+<div class="article-accent-line"></div>
+
+<h1>
+[TITLE]
+</h1>
+
+<p class="article-subtitle">
+[SUBTITLE]
+</p>
+
+<div class="article-details">
+
+<div class="detail-item">
+⏱ [READING-TIME]
+</div>
+
+<div class="detail-item">
+[TAGS]
+</div>
+
+</div>
+
+<div class="author-box">
+
+<div class="author-name">
+Observer Desk
+</div>
+
+<div class="author-role">
+Think Beyond the Narrative
+</div>
+
+</div>
+
+</div>
+
+<div class="article-right">
+
+<img src="../images/[HERO-IMAGE]"
+alt="[TITLE]">
+
+</div>
+
+</section>
+
+<main class="article-paper">
+
+<div class="article-container article-body">
+
+<div class="article-intro">
+[INTRO SUMMARY]
+</div>
+
+[ARTICLE CONTENT]
+
+<div class="essay-signature">
+— Observer Desk
+</div>
+
+<section class="article-social">
+
+```
+<section class="about">
+
+<div class="section-title">
+About Observer Desk
+</div>
+
+<h2>
+Think Beyond the Narrative
+</h2>
+
+<p>
+Observer Desk is an independent publication examining politics,
+institutions, governance, media, and public affairs through
+context, evidence, and critical thinking.
+</p>
+
+<br>
+
+<p>
+The objective is not to tell readers what to think,
+but to encourage deeper examination of assumptions,
+narratives, and institutions that shape public understanding.
+</p>
+
+</section>
+
+<section class="social-section">
+
+<div class="section-title">
+Follow Observer Desk
+</div>
+
+<div class="social-links">
+
+<a href="https://www.facebook.com/profile.php?id=61590416980374">Facebook</a>
+
+<a href="#">X</a>
+
+<a href="#">YouTube</a>
+
+<a href="#">Instagram</a>
+
+<a href="#">TikTok</a>
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+<footer>
+
+
+Observer Desk © 2026
+
+
+</footer>
+
+<div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img id="modalImage" class="modal-image">
+</div>```
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeBtn = document.querySelector(".close-modal");
+
+    document.querySelectorAll(".article-body img").forEach(img => {
+
+        img.addEventListener("click", () => {
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+        });
+
+    });
+
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (e) => {
+        if(e.target === modal){
+            modal.style.display = "none";
+        }
+    });
+
+});
+</script>
+
+</body>
+</html>
+
+
+</div>
+
+</main>
+
+</body>
+</html>
